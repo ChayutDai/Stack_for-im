@@ -15,11 +15,11 @@ class Stack extends CI_Controller {
     public static $testvalue = 0;
 	public function index()
 	{
-     // $this->load->model('m_stack');
-    //  $data['query'] = $this->m_stack->get_stack();  
-     // $this->load->helper('url');
-      //$this->load->view('v_stack',$data);
-    echo "hello";
+        $this->load->model('m_stack');
+        $data['query'] = $this->m_stack->get_stack();  
+        $this->load->helper('url');
+        $this->load->view('v_stack',$data);
+    
 	}
     
     
