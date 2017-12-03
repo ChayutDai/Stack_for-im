@@ -51,6 +51,7 @@ value  | index array
 
 - สมมุติ Speacial(7,4) insert ค่า 7 หลัง index ที่ 4 
 
+
 value  | index array  | |value  | index array|  |value  | index array| 
 ------------- | -------------
 6  | array[6] | |6  | array[7] (+1)||6  | array[7]
@@ -58,8 +59,8 @@ value  | index array  | |value  | index array|  |value  | index array|
 4  | array[4] |->|4  | array[5] (+1) |->|4  | array[5]  
 3  | array[3] ||3  | array[6] ||7  | array[4] (New)
 2  | array[2] ||2  | array[6] ||3  | array[3] 
-1  | array[1] ||1  | array[6] ||2  | array[2] 
-    |               ||   |               | |1  | array[1] 
+1  | array[1] ||1  | array[6] ||2  | array[2]
+
 
 ###Function
 - Push()
