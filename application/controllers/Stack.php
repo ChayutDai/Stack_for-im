@@ -4,11 +4,11 @@ require_once 'Linklist.php';
 use abc as node;
 class Stack extends CI_Controller {
 
-    private $firstNode;
+   // private $firstNode;
   
-    private $lastNode;
+   // private $lastNode;
    
-    private $count;
+   // private $count;
     
     private $top;
  
@@ -76,12 +76,12 @@ class Stack extends CI_Controller {
       //  }
     }
     
-    public function speacial(){
+    public function special(){
         $index = $this->input->post('index');
         $value = $this->input->post('value');
         $this->load->model('m_stack');
   
-        $result = $this->m_stack->insert_speacial_stack($index,$value);
+        $result = $this->m_stack->insert_special_stack($index,$value);
         $result = $this->m_stack->get_stack();
        
     }

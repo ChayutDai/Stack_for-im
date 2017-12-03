@@ -41,10 +41,10 @@
            
             $.ajax({
                 type: 'POST',
-                url: '<?php echo site_url("stack/speacial"); ?>',
+                url: '<?php echo site_url("stack/special"); ?>',
                 data: {
                    'index': $('#stack_index option:selected').val(),
-                   'value': $('input[name="int_value_speacial"]').val()
+                   'value': $('input[name="int_value_special"]').val()
                 },
                 success: function(data) {
                 	console.log("succes");
@@ -63,7 +63,7 @@
     <input type="submit" value="push" id="push">
 </form>
 <form id="speacial">   
-    Input value: <input type="int" name="int_value_speacial" id="int_value_speacial">
+    Input value: <input type="int" name="int_value_special" id="int_value_special">
     Insert Append
     <select  id="stack_index">
         <?php foreach ($query as $item):?>
@@ -71,7 +71,7 @@
         <?php endforeach;?>
       
     </select>
-    <input type="submit" value="push" id="push_speacial">
+    <input type="submit" value="push" id="push_spacial">
 </form>    
 <form id="pop">
     <input type="submit" value="pop" id="pop">

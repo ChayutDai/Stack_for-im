@@ -26,7 +26,7 @@ class M_stack extends CI_Model {
         $query = $this->db->insert('stack_value', $data);
         return $value;
     }
-    public function insert_speacial_stack($index,$value){
+    public function insert_special_stack($index,$value){
         $sql = "SELECT ID,stack_number FROM `stack_value` WHERE stack_number >= ? ";
         $query = $this->db->query($sql, array($index));
         

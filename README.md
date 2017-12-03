@@ -49,7 +49,7 @@ value  | index array
 2  | array[2] 
 1  | array[1] 
 
-- สมมุติ Speacial(7,4) insert ค่า 7 หลัง index ที่ 4 
+- สมมุติ Special(7,4) insert ค่า 7 หลัง index ที่ 4 
 
 
 value  | index array  | 
@@ -59,13 +59,17 @@ value  | index array  |
 4  | array[5] (+1) 
 7  | array[4] (New)
 3  | array[3] 
-2  | array[3] 
-1  | array[2]
+2  | array[2] 
+1  | array[1]
 
 
 ###Function
 - Push()
 
+    <?php
+        echo "Hello world!";
+    ?>
+    
 - Pop()
 
 - Speacial
