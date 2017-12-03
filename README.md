@@ -95,10 +95,14 @@ public function pop(){
 ```
 - Speacial
 ```php
-public function pop(){
-
-    // ลบ แถวที่มีค่า array มากที่สุด
+public function special(){
+	// รับ input index ที่จะแทรก และค่า(value)ที่จะแทรก
+   		$index = $this->input->post('index');
+        $value = $this->input->post('value');
+    //  Update and Insert
         $this->load->model('m_stack');
-        $result = $this->m_stack->delete_stack();
-   
+        $result = $this->m_stack->insert_special_stack($index,$value);
+ 		 // 1. เพิ่มค่า array index ที่มากกว่า ค่า index ที่ได้ get มา จากบรรทัดบน
+		 // 2. Iinsert value และ index เข้าไป  
 }
+```

@@ -81,7 +81,7 @@ class Stack extends CI_Controller {
         $this->load->model('m_stack');
   
         $result = $this->m_stack->insert_special_stack($index,$value);
-        $result = $this->m_stack->get_stack();
+       // $result = $this->m_stack->get_stack();
        
     }
     
