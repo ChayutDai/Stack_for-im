@@ -58,7 +58,7 @@ class Stack extends CI_Controller {
     }
     
     public function pop(){
-        $value = $this->input->post('value');   
+          
         $this->load->model('m_stack');
         $result = $this->m_stack->delete_stack();
         

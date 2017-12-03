@@ -67,20 +67,38 @@ value  | index array  |
 - Push()
 ```php
 public function push(){
+
     // รับค่าที่ input เข้ามา  
         $value = $this->input->post('value'); 
-    // หาค่า top ของ stack ปัจจุบัน      
+
+    // หาค่า top ของ stack ปัจจุบัน (index array มากที่สุด)     
         $this->load->model('m_stack');
         $num_stack = $this->m_stack->count_stack();
+
     // เพิ่มค่า top สำหรับ stack ใหม่
         $num_stack++;
+
     // Insert
         $result = $this->m_stack->insert_stack($value,$num_stack++);
-        echo $result;
 }        
 ```
-    
-
+ 
 - Pop()
+```php
+public function pop(){
 
+    // ลบ แถวที่มีค่า array มากที่สุด
+        $this->load->model('m_stack');
+        $result = $this->m_stack->delete_stack();
+   
+    }
+```
 - Speacial
+```php
+public function pop(){
+
+    // ลบ แถวที่มีค่า array มากที่สุด
+        $this->load->model('m_stack');
+        $result = $this->m_stack->delete_stack();
+   
+}
