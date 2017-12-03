@@ -13,7 +13,8 @@
                     'value': url
                 },
                 success: function(data) {
-              //      console.log("succes");
+                    console.log("succes");
+                    window.location.reload();
               //      $("#div1").prepend("<li>" + data + "</li>");
                 }
             });
@@ -28,6 +29,8 @@
                    
                 },
                 success: function(data) {
+                	console.log("succes");
+                	window.location.reload();
                  //   alert(data);
                   //  $('#div1 li:first').remove();
                 }
@@ -44,6 +47,8 @@
                    'value': $('input[name="int_value_speacial"]').val()
                 },
                 success: function(data) {
+                	console.log("succes");
+                	window.location.reload();
                     
                 }
             });
