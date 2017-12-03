@@ -35,7 +35,6 @@ class Stack extends CI_Controller {
         }         
         */
         $value = $this->input->post('value');       
-        $this->count++;
         $this->load->model('m_stack');
         $num_stack = $this->m_stack->count_stack();
         $num_stack++;

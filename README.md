@@ -3,7 +3,7 @@
 
 (PHP, MySQL, Codeigniter Framwork)
 
-###Installation
+####Installation
 
 1. ติดตั้ง XAMP 
 2. Dowload หรือ Clone Resposit ลงที่ part  xamp/htdoc 
@@ -13,7 +13,7 @@
 6. Config Usr_site สำหรับคนไม่ใช้ localhost
 7. Finish
 
-###Concept Database
+####Concept Database
 
 - data structure Stack ลักษณะแบบ array
 
@@ -63,13 +63,21 @@ value  | index array  |
 1  | array[1]
 
 
-###Function
+####Function
 - Push()
-
-    <?php
-        echo "Hello world!";
-    ?>
+```php
+public function push(){
+       
+        $value = $this->input->post('value');       
+        $this->load->model('m_stack');
+        $num_stack = $this->m_stack->count_stack();
+        $num_stack++;
+        $result = $this->m_stack->insert_stack($value,$num_stack++);
+        echo $result;
+}        
+```
     
+
 - Pop()
 
 - Speacial
