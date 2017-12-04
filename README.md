@@ -8,7 +8,7 @@
 1. ติดตั้ง XAMP 
 2. Dowload หรือ Clone repository ลงที่ part  C:\xampp\htdocs
 3. สร้าง Database ชื่อ Stack 
-4. Import Database โดยไฟล์ stack.sql 
+4. Import Database โดยไฟล์ stack.sql ที่อยู่ใน folder ชื่อ sql file
 5. Config สำหรับติดต่อกับ Database ที่ไฟล์ stack/config/Database.php
 6. Config Usr_site สำหรับคนไม่ใช้ localhost
 7. Finish
@@ -101,9 +101,9 @@ public function special(){
 		$index = $this->input->post('index');
 		$value = $this->input->post('value');
 	//  Update and Insert
-        $this->load->model('m_stack');
-        $result = $this->m_stack->insert_special_stack($index,$value);
- 		 // 1. เพิ่มค่า array index ที่มากกว่า ค่า index ที่ได้ get มา จากบรรทัดบน
-		 // 2. Iinsert value และ index เข้าไป  
+		$this->load->model('m_stack');
+		$result = $this->m_stack->insert_special_stack($index,$value);
+		// 1. เพิ่มค่า array index ที่มากกว่า ค่า index ที่ได้ get มา จากบรรทัดบน
+		// 2. Insert value และ index เข้าไป  
 }
 ```
